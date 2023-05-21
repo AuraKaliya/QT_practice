@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>test_transparency.png</file>
+        <file>test_transparency2.png</file>
+        <file>test_transparency3.png</file>
+        <file>test_transparency4.png</file>
+        <file>test_choiceIcon.png</file>
+    </qresource>
+</RCC>
