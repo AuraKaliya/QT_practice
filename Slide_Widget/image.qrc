@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/">
+        <file>test_CharacterCardPix1.png</file>
+        <file>test_CharacterCardPix2.png</file>
+        <file>test_CharacterCardPix3.png</file>
+        <file>test_CharacterCardPix4.png</file>
+        <file>test_CharacterCardPix5.png</file>
+        <file>test_CharacterCardSmallPix1.png</file>
+        <file>test_CharacterCardSmallPix2.png</file>
+        <file>test_CharacterCardSmallPix3.png</file>
+        <file>test_CharacterCardSmallPix4.png</file>
+        <file>test_CharacterCardSmallPix5.png</file>
+    </qresource>
+</RCC>
