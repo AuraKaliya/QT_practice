@@ -7,3 +7,4 @@
 * characterHubWidget： 一个页面原型，除开布局之外，还实现了一个小功能：验证码滑块。
 * SLide_Widegt:一个滑动窗体的原型，仿造原神角色栏展开关闭设计，并添加了两种排布方式，同时尝试给窗体状态改变时添加变化的动画。
 * QtLinkMySQLTest：一个Qt链接MySQL的测试，用于验证我在进行工程构建时的一些想法，目前印证过的有：利用表名和表结构在程序中建立简单的反射机制，实现数据的动态初始化。
+* rotateTest：手卡圆弧展开的原型，测试使用QGraphicsProxyWidget代理QLabel放在Scene中，通过旋转和平移View来达到圆弧展开的功能。
