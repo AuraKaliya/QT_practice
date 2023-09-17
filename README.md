@@ -9,3 +9,4 @@
 * QtLinkMySQLTest：一个Qt链接MySQL的测试，用于验证我在进行工程构建时的一些想法，目前印证过的有：利用表名和表结构在程序中建立简单的反射机制，实现数据的动态初始化。
 * rotateTest：手卡圆弧展开的原型，测试使用QGraphicsProxyWidget代理QLabel放在Scene中，通过旋转和平移View来达到圆弧展开的功能。
 * QtThreadTest：Qt多线程的练手项目，实现了一种方式的多线程下进行数据生成-排序然后传回主线程进行展示的功能。
+* QtPluginsTest 和 PluginDemo1：Qt插件的练习项目，配套学习整理《Qt插件系统的使用.md》，用于构建项目中的插件系统（后续可能会再做一个更详细的练习用作原型）。
