@@ -10,3 +10,4 @@
 * rotateTest：手卡圆弧展开的原型，测试使用QGraphicsProxyWidget代理QLabel放在Scene中，通过旋转和平移View来达到圆弧展开的功能。
 * QtThreadTest：Qt多线程的练手项目，实现了一种方式的多线程下进行数据生成-排序然后传回主线程进行展示的功能。
 * QtPluginsTest 和 PluginDemo1：Qt插件的练习项目，配套学习整理《Qt插件系统的使用.md》，用于构建项目中的插件系统（后续可能会再做一个更详细的练习用作原型）。
+* QtPluginSystemCardDynamic、QtPluginSystemMainAppStatic和QtPluginSystemTest:作为面向工程开发的软件原型，实现逻辑、UI、插件结构分离开发，为项目提供可扩展功能（技术点和设计理念整理至《Qt插件系统的使用.md》）。
