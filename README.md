@@ -15,3 +15,4 @@
 * QtSendFileClientTest、QtSendFileServerTest：一个简易的文件传输原型。
 * QtServerListTest：一个多端通信原型。
 * StatusMachineTest：状态机框架的原型，供毕设的想法测试。
+* PropertyTest：属性系统的练习，作为毕设参考的原型。
