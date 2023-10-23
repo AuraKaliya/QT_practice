@@ -17,3 +17,4 @@
 * StatusMachineTest：状态机框架的原型，供毕设的想法测试。
 * PropertyTest：属性系统的练习，作为毕设参考的原型。
 * OpenGLTest1/2：OpenGL学习的记录，作为技术积累。
+* TemplateTest：将反射框架抽象成模板，作为毕设的参考原型。
