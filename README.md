@@ -18,3 +18,4 @@
 * PropertyTest：属性系统的练习，作为毕设参考的原型。
 * OpenGLTest1/2：OpenGL学习的记录，作为技术积累。
 * TemplateTest：将反射框架抽象成模板，作为毕设的参考原型。
+* Qt_TreeTest：基于Qt的View/Model框架搭建的视图-模型结构的测试，尝试了基于Abstract基类衍生自定义View、Model、ProxyModel的练习，作为毕设UI和TOOL之间交互的一个选择。
