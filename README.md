@@ -20,3 +20,4 @@
 * TemplateTest：将反射框架抽象成模板，作为毕设的参考原型。
 * Qt_TreeTest：基于Qt的View/Model框架搭建的视图-模型结构的测试，尝试了基于Abstract基类衍生自定义View、Model、ProxyModel的练习，作为毕设UI和TOOL之间交互的一个选择。
 * luaTest：lua和Qt的相互调用的测试，我打算以这个作为毕设的脚本系统的原型（本来预想的是通过指令系统控制图元的，但是想了一星期没想到该如何去组织这部分的控制结构和显示关系，还是参考unity的脚本系统来设计吧）。
+* QGraphicViewTEST: 在里面测试了毕设所设计的四个基础Item的功能，作为毕设的参考原型。
