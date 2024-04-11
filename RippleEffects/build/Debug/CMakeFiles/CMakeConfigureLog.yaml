@@ -1,0 +1,286 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/SiPESC Platform/win64/share/cmake/Modules/CMakeDetermineSystem.cmake:211 (message)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      The system is: Windows - 6.2.9200 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/SiPESC Platform/win64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/SiPESC Platform/win64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/SiPESC Platform/win64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: C:/PROGRAM FILES/SIPESC PLATFORM/WIN64/BIN/g++.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.exe"
+      
+      The CXX compiler identification is GNU, found in:
+        E:/qtFile/RippleEffects/build/Debug/CMakeFiles/3.27.3/CompilerIdCXX/a.exe
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/SiPESC Platform/win64/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/Program Files/SiPESC Platform/win64/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "E:/qtFile/RippleEffects/build/Debug/CMakeFiles/CMakeScratch/TryCompile-jkdm5w"
+      binary: "E:/qtFile/RippleEffects/build/Debug/CMakeFiles/CMakeScratch/TryCompile-jkdm5w"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'E:/qtFile/RippleEffects/build/Debug/CMakeFiles/CMakeScratch/TryCompile-jkdm5w'
+        
+        Run Build Command(s): C:/PROGRA~1/SIPESC~1/win64/bin/ninja.exe -v cmTC_7daba
+        [1/2] C:\\PROGRA~1\\SIPESC~1\\WIN64\\BIN\\G__~1.EXE   -v -o CMakeFiles/cmTC_7daba.dir/CMakeCXXCompilerABI.cpp.obj -c "C:/Program Files/SiPESC Platform/win64/share/cmake/Modules/CMakeCXXCompilerABI.cpp"
+        Using built-in specs.
+        COLLECT_GCC=C:\\PROGRA~1\\SIPESC~1\\WIN64\\BIN\\G__~1.EXE
+        Target: x86_64-w64-mingw32
+        Configured with: ../configure -v --enable-languages=c,c++,fortran,lto,objc,obj-c++ --enable-lto --enable-libstdcxx-threads --enable-libstdcxx-time --enable-libstdcxx-filesystem-ts --disable-libstdcxx-debug --disable-libstdcxx-pch --enable-version-specific-runtime-libs --enable-fully-dynamic-string --enable-optimize --enable-graphite --disable-werror --disable-nls --disable-rpath --disable-win32-registry --disable-multilib --enable-threads=posix --enable-static --enable-shared --enable-libgomp --enable-libatomic --with-gnu-ld --disable-symvers --disable-build-poststage1-with-cxx --enable-cxx-flags='-fno-function-sections -fno-data-sections' --prefix=C:/PROGRA~1/SIPESC~1/win64                                             --with-arch=x86-64 --with-tune=generic --target=x86_64-w64-mingw32 --host=x86_64-w64-mingw32 --libexecdir=C:/PROGRA~1/SIPESC~1/win64/lib                                             --with-native-system-header-dir=C:/PROGRA~1/SIPESC~1/win64/include
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 12.3.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7daba.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_7daba.dir/'
+         c:/progra~1/sipesc~1/win64/bin/../lib/gcc/x86_64-w64-mingw32/12.3.0/cc1plus.exe -quiet -v -iprefix c:\\progra~1\\sipesc~1\\win64\\bin\\../lib/gcc/x86_64-w64-mingw32/12.3.0/ -D_REENTRANT C:/Program Files/SiPESC Platform/win64/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_7daba.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o C:\\Users\\Aura\\AppData\\Local\\Temp\\cc5HDWnU.s
+        GNU C++17 (GCC) version 12.3.0 (x86_64-w64-mingw32)
+        	compiled by GNU C version 12.3.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "C:/PROGRA~1/SIPESC~1/win64/include"
+        ignoring nonexistent directory "C:/PROGRA~1/SIPESC~1/win64/lib/gcc/x86_64-w64-mingw32/12.3.0/../../../../x86_64-w64-mingw32/include"
+        ignoring nonexistent directory "/mingw/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         c:\\progra~1\\sipesc~1\\win64\\bin\\../lib/gcc/x86_64-w64-mingw32/12.3.0
+         C:/PROGRA~1/SIPESC~1/win64/lib/gcc/x86_64-w64-mingw32/12.3.0/include/c++
+         C:/PROGRA~1/SIPESC~1/win64/lib/gcc/x86_64-w64-mingw32/12.3.0/include/c++/x86_64-w64-mingw32
+         C:/PROGRA~1/SIPESC~1/win64/lib/gcc/x86_64-w64-mingw32/12.3.0/include/c++/backward
+         C:/PROGRA~1/SIPESC~1/win64/lib/gcc/x86_64-w64-mingw32/12.3.0/include
+         C:/PROGRA~1/SIPESC~1/win64/lib/gcc/x86_64-w64-mingw32/12.3.0/../../../../include
+         C:/PROGRA~1/SIPESC~1/win64/lib/gcc/x86_64-w64-mingw32/12.3.0/include-fixed
+        End of search list.
+        GNU C++17 (GCC) version 12.3.0 (x86_64-w64-mingw32)
+        	compiled by GNU C version 12.3.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: 19194c7d8c4b9bf26a71ed37fde25f8f
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7daba.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_7daba.dir/'
+         as -v -o CMakeFiles/cmTC_7daba.dir/CMakeCXXCompilerABI.cpp.obj C:\\Users\\Aura\\AppData\\Local\\Temp\\cc5HDWnU.s
+        GNU assembler version 2.40 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.40
+        COMPILER_PATH=c:/progra~1/sipesc~1/win64/bin/../lib/gcc/x86_64-w64-mingw32/12.3.0/;c:/progra~1/sipesc~1/win64/bin/../lib/gcc/
+        LIBRARY_PATH=c:/progra~1/sipesc~1/win64/bin/../lib/gcc/x86_64-w64-mingw32/12.3.0/;c:/progra~1/sipesc~1/win64/bin/../lib/gcc/;c:/progra~1/sipesc~1/win64/bin/../lib/gcc/x86_64-w64-mingw32/12.3.0/../../../../lib/;c:/progra~1/sipesc~1/win64/bin/../lib/gcc/x86_64-w64-mingw32/12.3.0/../../../
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7daba.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_7daba.dir/CMakeCXXCompilerABI.cpp.'
+        [2/2] cmd.exe /C "cd . && C:\\PROGRA~1\\SIPESC~1\\WIN64\\BIN\\G__~1.EXE  -v CMakeFiles/cmTC_7daba.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_7daba.exe -Wl,--out-implib,libcmTC_7daba.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
+        Using built-in specs.
+        COLLECT_GCC=C:\\PROGRA~1\\SIPESC~1\\WIN64\\BIN\\G__~1.EXE
+        COLLECT_LTO_WRAPPER=c:/progra~1/sipesc~1/win64/bin/../lib/gcc/x86_64-w64-mingw32/12.3.0/lto-wrapper.exe
+        Target: x86_64-w64-mingw32
+        Configured with: ../configure -v --enable-languages=c,c++,fortran,lto,objc,obj-c++ --enable-lto --enable-libstdcxx-threads --enable-libstdcxx-time --enable-libstdcxx-filesystem-ts --disable-libstdcxx-debug --disable-libstdcxx-pch --enable-version-specific-runtime-libs --enable-fully-dynamic-string --enable-optimize --enable-graphite --disable-werror --disable-nls --disable-rpath --disable-win32-registry --disable-multilib --enable-threads=posix --enable-static --enable-shared --enable-libgomp --enable-libatomic --with-gnu-ld --disable-symvers --disable-build-poststage1-with-cxx --enable-cxx-flags='-fno-function-sections -fno-data-sections' --prefix=C:/PROGRA~1/SIPESC~1/win64                                             --with-arch=x86-64 --with-tune=generic --target=x86_64-w64-mingw32 --host=x86_64-w64-mingw32 --libexecdir=C:/PROGRA~1/SIPESC~1/win64/lib                                             --with-native-system-header-dir=C:/PROGRA~1/SIPESC~1/win64/include
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 12.3.0 (GCC) 
+        COMPILER_PATH=c:/progra~1/sipesc~1/win64/bin/../lib/gcc/x86_64-w64-mingw32/12.3.0/;c:/progra~1/sipesc~1/win64/bin/../lib/gcc/
+        LIBRARY_PATH=c:/progra~1/sipesc~1/win64/bin/../lib/gcc/x86_64-w64-mingw32/12.3.0/;c:/progra~1/sipesc~1/win64/bin/../lib/gcc/;c:/progra~1/sipesc~1/win64/bin/../lib/gcc/x86_64-w64-mingw32/12.3.0/../../../../lib/;c:/progra~1/sipesc~1/win64/bin/../lib/gcc/x86_64-w64-mingw32/12.3.0/../../../
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7daba.exe' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_7daba.'
+         c:/progra~1/sipesc~1/win64/bin/../lib/gcc/x86_64-w64-mingw32/12.3.0/collect2.exe -plugin c:/progra~1/sipesc~1/win64/bin/../lib/gcc/x86_64-w64-mingw32/12.3.0/liblto_plugin.dll -plugin-opt=c:/progra~1/sipesc~1/win64/bin/../lib/gcc/x86_64-w64-mingw32/12.3.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Aura\\AppData\\Local\\Temp\\ccZ0lxbZ.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_7daba.exe c:/progra~1/sipesc~1/win64/bin/../lib/gcc/x86_64-w64-mingw32/12.3.0/../../../../lib/crt2.o c:/progra~1/sipesc~1/win64/bin/../lib/gcc/x86_64-w64-mingw32/12.3.0/crtbegin.o -Lc:/progra~1/sipesc~1/win64/bin/../lib/gcc/x86_64-w64-mingw32/12.3.0 -Lc:/progra~1/sipesc~1/win64/bin/../lib/gcc -Lc:/progra~1/sipesc~1/win64/bin/../lib/gcc/x86_64-w64-mingw32/12.3.0/../../../../lib -Lc:/progra~1/sipesc~1/win64/bin/../lib/gcc/x86_64-w64-mingw32/12.3.0/../../.. CMakeFiles/cmTC_7daba.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_7daba.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 c:/progra~1/sipesc~1/win64/bin/../lib/gcc/x86_64-w64-mingw32/12.3.0/crtend.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7daba.exe' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_7daba.'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/SiPESC Platform/win64/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "C:/Program Files/SiPESC Platform/win64/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [c:/progra~1/sipesc~1/win64/bin/../lib/gcc/x86_64-w64-mingw32/12.3.0]
+          add: [C:/PROGRA~1/SIPESC~1/win64/lib/gcc/x86_64-w64-mingw32/12.3.0/include/c++]
+          add: [C:/PROGRA~1/SIPESC~1/win64/lib/gcc/x86_64-w64-mingw32/12.3.0/include/c++/x86_64-w64-mingw32]
+          add: [C:/PROGRA~1/SIPESC~1/win64/lib/gcc/x86_64-w64-mingw32/12.3.0/include/c++/backward]
+          add: [C:/PROGRA~1/SIPESC~1/win64/lib/gcc/x86_64-w64-mingw32/12.3.0/include]
+          add: [C:/PROGRA~1/SIPESC~1/win64/lib/gcc/x86_64-w64-mingw32/12.3.0/../../../../include]
+          add: [C:/PROGRA~1/SIPESC~1/win64/lib/gcc/x86_64-w64-mingw32/12.3.0/include-fixed]
+        end of search list found
+        collapse include dir [c:/progra~1/sipesc~1/win64/bin/../lib/gcc/x86_64-w64-mingw32/12.3.0] ==> [C:/Program Files/SiPESC Platform/win64/lib/gcc/x86_64-w64-mingw32/12.3.0]
+        collapse include dir [C:/PROGRA~1/SIPESC~1/win64/lib/gcc/x86_64-w64-mingw32/12.3.0/include/c++] ==> [C:/Program Files/SiPESC Platform/win64/lib/gcc/x86_64-w64-mingw32/12.3.0/include/c++]
+        collapse include dir [C:/PROGRA~1/SIPESC~1/win64/lib/gcc/x86_64-w64-mingw32/12.3.0/include/c++/x86_64-w64-mingw32] ==> [C:/Program Files/SiPESC Platform/win64/lib/gcc/x86_64-w64-mingw32/12.3.0/include/c++/x86_64-w64-mingw32]
+        collapse include dir [C:/PROGRA~1/SIPESC~1/win64/lib/gcc/x86_64-w64-mingw32/12.3.0/include/c++/backward] ==> [C:/Program Files/SiPESC Platform/win64/lib/gcc/x86_64-w64-mingw32/12.3.0/include/c++/backward]
+        collapse include dir [C:/PROGRA~1/SIPESC~1/win64/lib/gcc/x86_64-w64-mingw32/12.3.0/include] ==> [C:/Program Files/SiPESC Platform/win64/lib/gcc/x86_64-w64-mingw32/12.3.0/include]
+        collapse include dir [C:/PROGRA~1/SIPESC~1/win64/lib/gcc/x86_64-w64-mingw32/12.3.0/../../../../include] ==> [C:/Program Files/SiPESC Platform/win64/include]
+        collapse include dir [C:/PROGRA~1/SIPESC~1/win64/lib/gcc/x86_64-w64-mingw32/12.3.0/include-fixed] ==> [C:/Program Files/SiPESC Platform/win64/lib/gcc/x86_64-w64-mingw32/12.3.0/include-fixed]
+        implicit include dirs: [C:/Program Files/SiPESC Platform/win64/lib/gcc/x86_64-w64-mingw32/12.3.0;C:/Program Files/SiPESC Platform/win64/lib/gcc/x86_64-w64-mingw32/12.3.0/include/c++;C:/Program Files/SiPESC Platform/win64/lib/gcc/x86_64-w64-mingw32/12.3.0/include/c++/x86_64-w64-mingw32;C:/Program Files/SiPESC Platform/win64/lib/gcc/x86_64-w64-mingw32/12.3.0/include/c++/backward;C:/Program Files/SiPESC Platform/win64/lib/gcc/x86_64-w64-mingw32/12.3.0/include;C:/Program Files/SiPESC Platform/win64/include;C:/Program Files/SiPESC Platform/win64/lib/gcc/x86_64-w64-mingw32/12.3.0/include-fixed]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/SiPESC Platform/win64/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "C:/Program Files/SiPESC Platform/win64/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld\\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: 'E:/qtFile/RippleEffects/build/Debug/CMakeFiles/CMakeScratch/TryCompile-jkdm5w']
+        ignore line: []
+        ignore line: [Run Build Command(s): C:/PROGRA~1/SIPESC~1/win64/bin/ninja.exe -v cmTC_7daba]
+        ignore line: [[1/2] C:\\PROGRA~1\\SIPESC~1\\WIN64\\BIN\\G__~1.EXE   -v -o CMakeFiles/cmTC_7daba.dir/CMakeCXXCompilerABI.cpp.obj -c "C:/Program Files/SiPESC Platform/win64/share/cmake/Modules/CMakeCXXCompilerABI.cpp"]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=C:\\PROGRA~1\\SIPESC~1\\WIN64\\BIN\\G__~1.EXE]
+        ignore line: [Target: x86_64-w64-mingw32]
+        ignore line: [Configured with: ../configure -v --enable-languages=c,c++,fortran,lto,objc,obj-c++ --enable-lto --enable-libstdcxx-threads --enable-libstdcxx-time --enable-libstdcxx-filesystem-ts --disable-libstdcxx-debug --disable-libstdcxx-pch --enable-version-specific-runtime-libs --enable-fully-dynamic-string --enable-optimize --enable-graphite --disable-werror --disable-nls --disable-rpath --disable-win32-registry --disable-multilib --enable-threads=posix --enable-static --enable-shared --enable-libgomp --enable-libatomic --with-gnu-ld --disable-symvers --disable-build-poststage1-with-cxx --enable-cxx-flags='-fno-function-sections -fno-data-sections' --prefix=C:/PROGRA~1/SIPESC~1/win64                                             --with-arch=x86-64 --with-tune=generic --target=x86_64-w64-mingw32 --host=x86_64-w64-mingw32 --libexecdir=C:/PROGRA~1/SIPESC~1/win64/lib                                             --with-native-system-header-dir=C:/PROGRA~1/SIPESC~1/win64/include]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 12.3.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7daba.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_7daba.dir/']
+        ignore line: [ c:/progra~1/sipesc~1/win64/bin/../lib/gcc/x86_64-w64-mingw32/12.3.0/cc1plus.exe -quiet -v -iprefix c:\\progra~1\\sipesc~1\\win64\\bin\\../lib/gcc/x86_64-w64-mingw32/12.3.0/ -D_REENTRANT C:/Program Files/SiPESC Platform/win64/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_7daba.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o C:\\Users\\Aura\\AppData\\Local\\Temp\\cc5HDWnU.s]
+        ignore line: [GNU C++17 (GCC) version 12.3.0 (x86_64-w64-mingw32)]
+        ignore line: [	compiled by GNU C version 12.3.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "C:/PROGRA~1/SIPESC~1/win64/include"]
+        ignore line: [ignoring nonexistent directory "C:/PROGRA~1/SIPESC~1/win64/lib/gcc/x86_64-w64-mingw32/12.3.0/../../../../x86_64-w64-mingw32/include"]
+        ignore line: [ignoring nonexistent directory "/mingw/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ c:\\progra~1\\sipesc~1\\win64\\bin\\../lib/gcc/x86_64-w64-mingw32/12.3.0]
+        ignore line: [ C:/PROGRA~1/SIPESC~1/win64/lib/gcc/x86_64-w64-mingw32/12.3.0/include/c++]
+        ignore line: [ C:/PROGRA~1/SIPESC~1/win64/lib/gcc/x86_64-w64-mingw32/12.3.0/include/c++/x86_64-w64-mingw32]
+        ignore line: [ C:/PROGRA~1/SIPESC~1/win64/lib/gcc/x86_64-w64-mingw32/12.3.0/include/c++/backward]
+        ignore line: [ C:/PROGRA~1/SIPESC~1/win64/lib/gcc/x86_64-w64-mingw32/12.3.0/include]
+        ignore line: [ C:/PROGRA~1/SIPESC~1/win64/lib/gcc/x86_64-w64-mingw32/12.3.0/../../../../include]
+        ignore line: [ C:/PROGRA~1/SIPESC~1/win64/lib/gcc/x86_64-w64-mingw32/12.3.0/include-fixed]
+        ignore line: [End of search list.]
+        ignore line: [GNU C++17 (GCC) version 12.3.0 (x86_64-w64-mingw32)]
+        ignore line: [	compiled by GNU C version 12.3.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: 19194c7d8c4b9bf26a71ed37fde25f8f]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7daba.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_7daba.dir/']
+        ignore line: [ as -v -o CMakeFiles/cmTC_7daba.dir/CMakeCXXCompilerABI.cpp.obj C:\\Users\\Aura\\AppData\\Local\\Temp\\cc5HDWnU.s]
+        ignore line: [GNU assembler version 2.40 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.40]
+        ignore line: [COMPILER_PATH=c:/progra~1/sipesc~1/win64/bin/../lib/gcc/x86_64-w64-mingw32/12.3.0/]
+        ignore line: [c:/progra~1/sipesc~1/win64/bin/../lib/gcc/]
+        ignore line: [LIBRARY_PATH=c:/progra~1/sipesc~1/win64/bin/../lib/gcc/x86_64-w64-mingw32/12.3.0/]
+        ignore line: [c:/progra~1/sipesc~1/win64/bin/../lib/gcc/]
+        ignore line: [c:/progra~1/sipesc~1/win64/bin/../lib/gcc/x86_64-w64-mingw32/12.3.0/../../../../lib/]
+        ignore line: [c:/progra~1/sipesc~1/win64/bin/../lib/gcc/x86_64-w64-mingw32/12.3.0/../../../]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7daba.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_7daba.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [[2/2] cmd.exe /C "cd . && C:\\PROGRA~1\\SIPESC~1\\WIN64\\BIN\\G__~1.EXE  -v CMakeFiles/cmTC_7daba.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_7daba.exe -Wl --out-implib libcmTC_7daba.dll.a -Wl --major-image-version 0 --minor-image-version 0   && cd ."]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=C:\\PROGRA~1\\SIPESC~1\\WIN64\\BIN\\G__~1.EXE]
+        ignore line: [COLLECT_LTO_WRAPPER=c:/progra~1/sipesc~1/win64/bin/../lib/gcc/x86_64-w64-mingw32/12.3.0/lto-wrapper.exe]
+        ignore line: [Target: x86_64-w64-mingw32]
+        ignore line: [Configured with: ../configure -v --enable-languages=c,c++,fortran,lto,objc,obj-c++ --enable-lto --enable-libstdcxx-threads --enable-libstdcxx-time --enable-libstdcxx-filesystem-ts --disable-libstdcxx-debug --disable-libstdcxx-pch --enable-version-specific-runtime-libs --enable-fully-dynamic-string --enable-optimize --enable-graphite --disable-werror --disable-nls --disable-rpath --disable-win32-registry --disable-multilib --enable-threads=posix --enable-static --enable-shared --enable-libgomp --enable-libatomic --with-gnu-ld --disable-symvers --disable-build-poststage1-with-cxx --enable-cxx-flags='-fno-function-sections -fno-data-sections' --prefix=C:/PROGRA~1/SIPESC~1/win64                                             --with-arch=x86-64 --with-tune=generic --target=x86_64-w64-mingw32 --host=x86_64-w64-mingw32 --libexecdir=C:/PROGRA~1/SIPESC~1/win64/lib                                             --with-native-system-header-dir=C:/PROGRA~1/SIPESC~1/win64/include]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 12.3.0 (GCC) ]
+        ignore line: [COMPILER_PATH=c:/progra~1/sipesc~1/win64/bin/../lib/gcc/x86_64-w64-mingw32/12.3.0/]
+        ignore line: [c:/progra~1/sipesc~1/win64/bin/../lib/gcc/]
+        ignore line: [LIBRARY_PATH=c:/progra~1/sipesc~1/win64/bin/../lib/gcc/x86_64-w64-mingw32/12.3.0/]
+        ignore line: [c:/progra~1/sipesc~1/win64/bin/../lib/gcc/]
+        ignore line: [c:/progra~1/sipesc~1/win64/bin/../lib/gcc/x86_64-w64-mingw32/12.3.0/../../../../lib/]
+        ignore line: [c:/progra~1/sipesc~1/win64/bin/../lib/gcc/x86_64-w64-mingw32/12.3.0/../../../]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7daba.exe' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_7daba.']
+        link line: [ c:/progra~1/sipesc~1/win64/bin/../lib/gcc/x86_64-w64-mingw32/12.3.0/collect2.exe -plugin c:/progra~1/sipesc~1/win64/bin/../lib/gcc/x86_64-w64-mingw32/12.3.0/liblto_plugin.dll -plugin-opt=c:/progra~1/sipesc~1/win64/bin/../lib/gcc/x86_64-w64-mingw32/12.3.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Aura\\AppData\\Local\\Temp\\ccZ0lxbZ.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_7daba.exe c:/progra~1/sipesc~1/win64/bin/../lib/gcc/x86_64-w64-mingw32/12.3.0/../../../../lib/crt2.o c:/progra~1/sipesc~1/win64/bin/../lib/gcc/x86_64-w64-mingw32/12.3.0/crtbegin.o -Lc:/progra~1/sipesc~1/win64/bin/../lib/gcc/x86_64-w64-mingw32/12.3.0 -Lc:/progra~1/sipesc~1/win64/bin/../lib/gcc -Lc:/progra~1/sipesc~1/win64/bin/../lib/gcc/x86_64-w64-mingw32/12.3.0/../../../../lib -Lc:/progra~1/sipesc~1/win64/bin/../lib/gcc/x86_64-w64-mingw32/12.3.0/../../.. CMakeFiles/cmTC_7daba.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_7daba.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 c:/progra~1/sipesc~1/win64/bin/../lib/gcc/x86_64-w64-mingw32/12.3.0/crtend.o]
+          arg [c:/progra~1/sipesc~1/win64/bin/../lib/gcc/x86_64-w64-mingw32/12.3.0/collect2.exe] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [c:/progra~1/sipesc~1/win64/bin/../lib/gcc/x86_64-w64-mingw32/12.3.0/liblto_plugin.dll] ==> ignore
+          arg [-plugin-opt=c:/progra~1/sipesc~1/win64/bin/../lib/gcc/x86_64-w64-mingw32/12.3.0/lto-wrapper.exe] ==> ignore
+          arg [-plugin-opt=-fresolution=C:\\Users\\Aura\\AppData\\Local\\Temp\\ccZ0lxbZ.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmoldname] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
+          arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
+          arg [-plugin-opt=-pass-through=-ladvapi32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lshell32] ==> ignore
+          arg [-plugin-opt=-pass-through=-luser32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmoldname] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
+          arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
+          arg [-m] ==> ignore
+          arg [i386pep] ==> ignore
+          arg [-Bdynamic] ==> search dynamic
+          arg [-o] ==> ignore
+          arg [cmTC_7daba.exe] ==> ignore
+          arg [c:/progra~1/sipesc~1/win64/bin/../lib/gcc/x86_64-w64-mingw32/12.3.0/../../../../lib/crt2.o] ==> obj [c:/progra~1/sipesc~1/win64/bin/../lib/gcc/x86_64-w64-mingw32/12.3.0/../../../../lib/crt2.o]
+          arg [c:/progra~1/sipesc~1/win64/bin/../lib/gcc/x86_64-w64-mingw32/12.3.0/crtbegin.o] ==> obj [c:/progra~1/sipesc~1/win64/bin/../lib/gcc/x86_64-w64-mingw32/12.3.0/crtbegin.o]
+          arg [-Lc:/progra~1/sipesc~1/win64/bin/../lib/gcc/x86_64-w64-mingw32/12.3.0] ==> dir [c:/progra~1/sipesc~1/win64/bin/../lib/gcc/x86_64-w64-mingw32/12.3.0]
+          arg [-Lc:/progra~1/sipesc~1/win64/bin/../lib/gcc] ==> dir [c:/progra~1/sipesc~1/win64/bin/../lib/gcc]
+          arg [-Lc:/progra~1/sipesc~1/win64/bin/../lib/gcc/x86_64-w64-mingw32/12.3.0/../../../../lib] ==> dir [c:/progra~1/sipesc~1/win64/bin/../lib/gcc/x86_64-w64-mingw32/12.3.0/../../../../lib]
+          arg [-Lc:/progra~1/sipesc~1/win64/bin/../lib/gcc/x86_64-w64-mingw32/12.3.0/../../..] ==> dir [c:/progra~1/sipesc~1/win64/bin/../lib/gcc/x86_64-w64-mingw32/12.3.0/../../..]
+          arg [CMakeFiles/cmTC_7daba.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
+          arg [--out-implib] ==> ignore
+          arg [libcmTC_7daba.dll.a] ==> ignore
+          arg [--major-image-version] ==> ignore
+          arg [0] ==> ignore
+          arg [--minor-image-version] ==> ignore
+          arg [0] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lmingw32] ==> lib [mingw32]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lmoldname] ==> lib [moldname]
+          arg [-lmingwex] ==> lib [mingwex]
+          arg [-lmsvcrt] ==> lib [msvcrt]
+          arg [-lkernel32] ==> lib [kernel32]
+          arg [-lpthread] ==> lib [pthread]
+          arg [-ladvapi32] ==> lib [advapi32]
+          arg [-lshell32] ==> lib [shell32]
+          arg [-luser32] ==> lib [user32]
+          arg [-lkernel32] ==> lib [kernel32]
+          arg [-lmingw32] ==> lib [mingw32]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lmoldname] ==> lib [moldname]
+          arg [-lmingwex] ==> lib [mingwex]
+          arg [-lmsvcrt] ==> lib [msvcrt]
+          arg [-lkernel32] ==> lib [kernel32]
+          arg [c:/progra~1/sipesc~1/win64/bin/../lib/gcc/x86_64-w64-mingw32/12.3.0/crtend.o] ==> obj [c:/progra~1/sipesc~1/win64/bin/../lib/gcc/x86_64-w64-mingw32/12.3.0/crtend.o]
+        remove lib [msvcrt]
+        remove lib [msvcrt]
+        collapse obj [c:/progra~1/sipesc~1/win64/bin/../lib/gcc/x86_64-w64-mingw32/12.3.0/../../../../lib/crt2.o] ==> [C:/Program Files/SiPESC Platform/win64/lib/crt2.o]
+        collapse obj [c:/progra~1/sipesc~1/win64/bin/../lib/gcc/x86_64-w64-mingw32/12.3.0/crtbegin.o] ==> [C:/Program Files/SiPESC Platform/win64/lib/gcc/x86_64-w64-mingw32/12.3.0/crtbegin.o]
+        collapse obj [c:/progra~1/sipesc~1/win64/bin/../lib/gcc/x86_64-w64-mingw32/12.3.0/crtend.o] ==> [C:/Program Files/SiPESC Platform/win64/lib/gcc/x86_64-w64-mingw32/12.3.0/crtend.o]
+        collapse library dir [c:/progra~1/sipesc~1/win64/bin/../lib/gcc/x86_64-w64-mingw32/12.3.0] ==> [C:/Program Files/SiPESC Platform/win64/lib/gcc/x86_64-w64-mingw32/12.3.0]
+        collapse library dir [c:/progra~1/sipesc~1/win64/bin/../lib/gcc] ==> [C:/Program Files/SiPESC Platform/win64/lib/gcc]
+        collapse library dir [c:/progra~1/sipesc~1/win64/bin/../lib/gcc/x86_64-w64-mingw32/12.3.0/../../../../lib] ==> [C:/Program Files/SiPESC Platform/win64/lib]
+        collapse library dir [c:/progra~1/sipesc~1/win64/bin/../lib/gcc/x86_64-w64-mingw32/12.3.0/../../..] ==> [C:/Program Files/SiPESC Platform/win64/lib]
+        implicit libs: [stdc++;mingw32;gcc_s;gcc;moldname;mingwex;kernel32;pthread;advapi32;shell32;user32;kernel32;mingw32;gcc_s;gcc;moldname;mingwex;kernel32]
+        implicit objs: [C:/Program Files/SiPESC Platform/win64/lib/crt2.o;C:/Program Files/SiPESC Platform/win64/lib/gcc/x86_64-w64-mingw32/12.3.0/crtbegin.o;C:/Program Files/SiPESC Platform/win64/lib/gcc/x86_64-w64-mingw32/12.3.0/crtend.o]
+        implicit dirs: [C:/Program Files/SiPESC Platform/win64/lib/gcc/x86_64-w64-mingw32/12.3.0;C:/Program Files/SiPESC Platform/win64/lib/gcc;C:/Program Files/SiPESC Platform/win64/lib]
+        implicit fwks: []
+      
+      
+...

@@ -1,0 +1,5 @@
+E:/qtFile/RippleEffects/build/Debug/CMakeFiles/RippleEffects.dir
+E:/qtFile/RippleEffects/build/Debug/CMakeFiles/edit_cache.dir
+E:/qtFile/RippleEffects/build/Debug/CMakeFiles/rebuild_cache.dir
+E:/qtFile/RippleEffects/build/Debug/CMakeFiles/RippleEffects_autogen_timestamp_deps.dir
+E:/qtFile/RippleEffects/build/Debug/CMakeFiles/RippleEffects_autogen.dir

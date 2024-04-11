@@ -1,0 +1,227 @@
+{
+	"BUILD_DIR" : "E:/qtFile/RippleEffects/build/Debug/RippleEffects_autogen",
+	"CMAKE_BINARY_DIR" : "E:/qtFile/RippleEffects/build/Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "E:/qtFile/RippleEffects/build/Debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "E:/qtFile/RippleEffects",
+	"CMAKE_EXECUTABLE" : "C:/Program Files/SiPESC Platform/win64/bin/cmake.exe",
+	"CMAKE_LIST_FILES" : 
+	[
+		"E:/qtFile/RippleEffects/CMakeLists.txt",
+		"C:/Program Files/SiPESC Platform/win64/share/qtcreator/package-manager/auto-setup.cmake",
+		"E:/qtFile/RippleEffects/build/Debug/CMakeFiles/3.27.3/CMakeSystem.cmake",
+		"C:/Program Files/SiPESC Platform/win64/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake",
+		"C:/Program Files/SiPESC Platform/win64/share/cmake/Modules/Platform/Windows-Initialize.cmake",
+		"E:/qtFile/RippleEffects/build/Debug/CMakeFiles/3.27.3/CMakeCXXCompiler.cmake",
+		"C:/Program Files/SiPESC Platform/win64/share/cmake/Modules/CMakeSystemSpecificInformation.cmake",
+		"C:/Program Files/SiPESC Platform/win64/share/cmake/Modules/CMakeGenericSystem.cmake",
+		"C:/Program Files/SiPESC Platform/win64/share/cmake/Modules/CMakeInitializeConfigs.cmake",
+		"C:/Program Files/SiPESC Platform/win64/share/cmake/Modules/Platform/Windows.cmake",
+		"C:/Program Files/SiPESC Platform/win64/share/cmake/Modules/Platform/WindowsPaths.cmake",
+		"C:/Program Files/SiPESC Platform/win64/share/cmake/Modules/CMakeCXXInformation.cmake",
+		"C:/Program Files/SiPESC Platform/win64/share/cmake/Modules/CMakeLanguageInformation.cmake",
+		"C:/Program Files/SiPESC Platform/win64/share/cmake/Modules/Compiler/GNU-CXX.cmake",
+		"C:/Program Files/SiPESC Platform/win64/share/cmake/Modules/Compiler/GNU.cmake",
+		"C:/Program Files/SiPESC Platform/win64/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake",
+		"C:/Program Files/SiPESC Platform/win64/share/cmake/Modules/Platform/Windows-GNU-CXX.cmake",
+		"C:/Program Files/SiPESC Platform/win64/share/cmake/Modules/Platform/Windows-GNU.cmake",
+		"E:/qtFile/RippleEffects/build/Debug/CMakeFiles/3.27.3/CMakeRCCompiler.cmake",
+		"C:/Program Files/SiPESC Platform/win64/share/cmake/Modules/CMakeRCInformation.cmake",
+		"C:/Program Files/SiPESC Platform/win64/share/cmake/Modules/Platform/Windows-windres.cmake",
+		"C:/Program Files/SiPESC Platform/win64/share/cmake/Modules/Platform/Windows-GNU-CXX-ABI.cmake",
+		"C:/Program Files/SiPESC Platform/win64/share/cmake/Modules/CMakeCommonLanguageInclude.cmake",
+		"C:/Program Files/SiPESC Platform/win64/lib/cmake/Qt5/Qt5ConfigVersion.cmake",
+		"C:/Program Files/SiPESC Platform/win64/lib/cmake/Qt5/Qt5Config.cmake",
+		"C:/Program Files/SiPESC Platform/win64/lib/cmake/Qt5/Qt5ConfigVersion.cmake",
+		"C:/Program Files/SiPESC Platform/win64/lib/cmake/Qt5/Qt5Config.cmake",
+		"C:/Program Files/SiPESC Platform/win64/lib/cmake/Qt5/Qt5ModuleLocation.cmake",
+		"C:/Program Files/SiPESC Platform/win64/lib/cmake/Qt5Widgets/Qt5WidgetsConfigVersion.cmake",
+		"C:/Program Files/SiPESC Platform/win64/lib/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake",
+		"C:/Program Files/SiPESC Platform/win64/lib/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake",
+		"C:/Program Files/SiPESC Platform/win64/lib/cmake/Qt5Gui/Qt5GuiConfig.cmake",
+		"C:/Program Files/SiPESC Platform/win64/lib/cmake/Qt5Core/Qt5CoreConfigVersion.cmake",
+		"C:/Program Files/SiPESC Platform/win64/lib/cmake/Qt5Core/Qt5CoreConfig.cmake",
+		"C:/Program Files/SiPESC Platform/win64/lib/cmake/Qt5Core/Qt5CoreConfigExtras.cmake",
+		"C:/Program Files/SiPESC Platform/win64/lib/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake",
+		"C:/Program Files/SiPESC Platform/win64/lib/cmake/Qt5Core/Qt5CoreMacros.cmake",
+		"C:/Program Files/SiPESC Platform/win64/share/cmake/Modules/CMakeParseArguments.cmake",
+		"C:/Program Files/SiPESC Platform/win64/lib/cmake/Qt5Gui/Qt5Gui_QGifPlugin.cmake",
+		"C:/Program Files/SiPESC Platform/win64/lib/cmake/Qt5Gui/Qt5Gui_QICNSPlugin.cmake",
+		"C:/Program Files/SiPESC Platform/win64/lib/cmake/Qt5Gui/Qt5Gui_QICOPlugin.cmake",
+		"C:/Program Files/SiPESC Platform/win64/lib/cmake/Qt5Gui/Qt5Gui_QJpegPlugin.cmake",
+		"C:/Program Files/SiPESC Platform/win64/lib/cmake/Qt5Gui/Qt5Gui_QMinimalIntegrationPlugin.cmake",
+		"C:/Program Files/SiPESC Platform/win64/lib/cmake/Qt5Gui/Qt5Gui_QOffscreenIntegrationPlugin.cmake",
+		"C:/Program Files/SiPESC Platform/win64/lib/cmake/Qt5Gui/Qt5Gui_QSvgIconPlugin.cmake",
+		"C:/Program Files/SiPESC Platform/win64/lib/cmake/Qt5Gui/Qt5Gui_QSvgPlugin.cmake",
+		"C:/Program Files/SiPESC Platform/win64/lib/cmake/Qt5Gui/Qt5Gui_QTgaPlugin.cmake",
+		"C:/Program Files/SiPESC Platform/win64/lib/cmake/Qt5Gui/Qt5Gui_QTiffPlugin.cmake",
+		"C:/Program Files/SiPESC Platform/win64/lib/cmake/Qt5Gui/Qt5Gui_QTuioTouchPlugin.cmake",
+		"C:/Program Files/SiPESC Platform/win64/lib/cmake/Qt5Gui/Qt5Gui_QVirtualKeyboardPlugin.cmake",
+		"C:/Program Files/SiPESC Platform/win64/lib/cmake/Qt5Gui/Qt5Gui_QWbmpPlugin.cmake",
+		"C:/Program Files/SiPESC Platform/win64/lib/cmake/Qt5Gui/Qt5Gui_QWebGLIntegrationPlugin.cmake",
+		"C:/Program Files/SiPESC Platform/win64/lib/cmake/Qt5Gui/Qt5Gui_QWebpPlugin.cmake",
+		"C:/Program Files/SiPESC Platform/win64/lib/cmake/Qt5Gui/Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake",
+		"C:/Program Files/SiPESC Platform/win64/lib/cmake/Qt5Gui/Qt5Gui_QWindowsIntegrationPlugin.cmake",
+		"C:/Program Files/SiPESC Platform/win64/lib/cmake/Qt5Gui/Qt5Gui_QXdgDesktopPortalThemePlugin.cmake",
+		"C:/Program Files/SiPESC Platform/win64/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake",
+		"C:/Program Files/SiPESC Platform/win64/lib/cmake/Qt5Widgets/Qt5Widgets_QWindowsVistaStylePlugin.cmake",
+		"C:/Program Files/SiPESC Platform/win64/lib/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake",
+		"C:/Program Files/SiPESC Platform/win64/lib/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake",
+		"C:/Program Files/SiPESC Platform/win64/share/cmake/Modules/CMakeParseArguments.cmake"
+	],
+	"CMAKE_SOURCE_DIR" : "E:/qtFile/RippleEffects",
+	"DEP_FILE" : "E:/qtFile/RippleEffects/build/Debug/RippleEffects_autogen/deps",
+	"DEP_FILE_RULE_NAME" : "RippleEffects_autogen/timestamp",
+	"HEADERS" : 
+	[
+		[
+			"E:/qtFile/RippleEffects/DATA/baseClass/componentobject.h",
+			"MU",
+			"DIPTCX7RNW/moc_componentobject.cpp",
+			null
+		],
+		[
+			"E:/qtFile/RippleEffects/DATA/baseClass/engineplugin.h",
+			"MU",
+			"DIPTCX7RNW/moc_engineplugin.cpp",
+			null
+		],
+		[
+			"E:/qtFile/RippleEffects/DATA/baseClass/gamedemo.h",
+			"MU",
+			"DIPTCX7RNW/moc_gamedemo.cpp",
+			null
+		],
+		[
+			"E:/qtFile/RippleEffects/DATA/baseClass/gameobject.h",
+			"MU",
+			"DIPTCX7RNW/moc_gameobject.cpp",
+			null
+		],
+		[
+			"E:/qtFile/RippleEffects/DATA/baseClass/uiwidget.h",
+			"MU",
+			"DIPTCX7RNW/moc_uiwidget.cpp",
+			null
+		],
+		[
+			"E:/qtFile/RippleEffects/DATA/instructioncontext.h",
+			"MU",
+			"3GAWU4JCQ7/moc_instructioncontext.cpp",
+			null
+		],
+		[
+			"E:/qtFile/RippleEffects/RippleEffects_global.h",
+			"MU",
+			"EWIEGA46WW/moc_RippleEffects_global.cpp",
+			null
+		],
+		[
+			"E:/qtFile/RippleEffects/TOOL/template/Factory.hpp",
+			"MU",
+			"KB47OEMPDQ/moc_Factory.cpp",
+			null
+		],
+		[
+			"E:/qtFile/RippleEffects/TOOL/template/Registor.hpp",
+			"MU",
+			"KB47OEMPDQ/moc_Registor.cpp",
+			null
+		],
+		[
+			"E:/qtFile/RippleEffects/TOOL/template/ThreadPool.hpp",
+			"MU",
+			"KB47OEMPDQ/moc_ThreadPool.cpp",
+			null
+		],
+		[
+			"E:/qtFile/RippleEffects/ripple.h",
+			"MU",
+			"EWIEGA46WW/moc_ripple.cpp",
+			null
+		],
+		[
+			"E:/qtFile/RippleEffects/rippleeffects.h",
+			"MU",
+			"EWIEGA46WW/moc_rippleeffects.cpp",
+			null
+		]
+	],
+	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
+	"INCLUDE_DIR" : "E:/qtFile/RippleEffects/build/Debug/RippleEffects_autogen/include",
+	"MOC_COMPILATION_FILE" : "E:/qtFile/RippleEffects/build/Debug/RippleEffects_autogen/mocs_compilation.cpp",
+	"MOC_DEFINITIONS" : 
+	[
+		"QT_CORE_LIB",
+		"QT_GUI_LIB",
+		"QT_WIDGETS_LIB",
+		"RIPPLEEFFECTS_LIBRARY",
+		"RippleEffects_EXPORTS"
+	],
+	"MOC_DEPEND_FILTERS" : 
+	[
+		[
+			"Q_PLUGIN_METADATA",
+			"[\n][ \t]*Q_PLUGIN_METADATA[ \t]*\\([^\\)]*FILE[ \t]*\"([^\"]+)\""
+		]
+	],
+	"MOC_INCLUDES" : 
+	[
+		"E:/qtFile/RippleEffects/build/Debug",
+		"E:/qtFile/RippleEffects",
+		"C:/Program Files/SiPESC Platform/win64/include/qt5",
+		"C:/Program Files/SiPESC Platform/win64/include/qt5/QtWidgets",
+		"C:/Program Files/SiPESC Platform/win64/include/qt5/QtGui",
+		"C:/Program Files/SiPESC Platform/win64/include/qt5/QtCore",
+		"C:/Program Files/SiPESC Platform/win64/lib/qt5/mkspecs/win32-g++",
+		"C:/Program Files/SiPESC Platform/win64/lib/gcc/x86_64-w64-mingw32/12.3.0",
+		"C:/Program Files/SiPESC Platform/win64/lib/gcc/x86_64-w64-mingw32/12.3.0/include/c++",
+		"C:/Program Files/SiPESC Platform/win64/lib/gcc/x86_64-w64-mingw32/12.3.0/include/c++/x86_64-w64-mingw32",
+		"C:/Program Files/SiPESC Platform/win64/lib/gcc/x86_64-w64-mingw32/12.3.0/include/c++/backward",
+		"C:/Program Files/SiPESC Platform/win64/lib/gcc/x86_64-w64-mingw32/12.3.0/include",
+		"C:/Program Files/SiPESC Platform/win64/include",
+		"C:/Program Files/SiPESC Platform/win64/lib/gcc/x86_64-w64-mingw32/12.3.0/include-fixed"
+	],
+	"MOC_MACRO_NAMES" : [ "Q_OBJECT", "Q_GADGET", "Q_NAMESPACE", "Q_NAMESPACE_EXPORT" ],
+	"MOC_OPTIONS" : [],
+	"MOC_PATH_PREFIX" : false,
+	"MOC_PREDEFS_CMD" : 
+	[
+		"C:/PROGRAM FILES/SIPESC PLATFORM/WIN64/BIN/g++.exe",
+		"-std=gnu++11",
+		"-dM",
+		"-E",
+		"-c",
+		"C:/Program Files/SiPESC Platform/win64/share/cmake/Modules/CMakeCXXCompilerABI.cpp"
+	],
+	"MOC_PREDEFS_FILE" : "E:/qtFile/RippleEffects/build/Debug/RippleEffects_autogen/moc_predefs.h",
+	"MOC_RELAXED_MODE" : false,
+	"MOC_SKIP" : [],
+	"MULTI_CONFIG" : false,
+	"PARALLEL" : 10,
+	"PARSE_CACHE_FILE" : "E:/qtFile/RippleEffects/build/Debug/CMakeFiles/RippleEffects_autogen.dir/ParseCache.txt",
+	"QT_MOC_EXECUTABLE" : "C:/Program Files/SiPESC Platform/win64/bin/moc.exe",
+	"QT_UIC_EXECUTABLE" : "C:/Program Files/SiPESC Platform/win64/bin/uic.exe",
+	"QT_VERSION_MAJOR" : 5,
+	"QT_VERSION_MINOR" : 15,
+	"SETTINGS_FILE" : "E:/qtFile/RippleEffects/build/Debug/CMakeFiles/RippleEffects_autogen.dir/AutogenUsed.txt",
+	"SOURCES" : 
+	[
+		[
+			"E:/qtFile/RippleEffects/DATA/baseClass/componentobject.cpp",
+			"MU",
+			null
+		],
+		[ "E:/qtFile/RippleEffects/DATA/baseClass/engineplugin.cpp", "MU", null ],
+		[ "E:/qtFile/RippleEffects/DATA/baseClass/gamedemo.cpp", "MU", null ],
+		[ "E:/qtFile/RippleEffects/DATA/baseClass/gameobject.cpp", "MU", null ],
+		[ "E:/qtFile/RippleEffects/DATA/baseClass/uiwidget.cpp", "MU", null ],
+		[ "E:/qtFile/RippleEffects/DATA/instructioncontext.cpp", "MU", null ],
+		[ "E:/qtFile/RippleEffects/ripple.cpp", "MU", null ],
+		[ "E:/qtFile/RippleEffects/rippleeffects.cpp", "MU", null ]
+	],
+	"UIC_OPTIONS" : [],
+	"UIC_SEARCH_PATHS" : [],
+	"UIC_SKIP" : [],
+	"UIC_UI_FILES" : [],
+	"VERBOSITY" : 0
+}
