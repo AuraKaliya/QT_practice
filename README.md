@@ -23,3 +23,5 @@
 * QGraphicViewTEST: 在里面测试了毕设所设计的四个基础Item的功能，作为毕设的参考原型。（目前包括地图：Map2DItem、角色：DynamicItem）
 * ChartDemo: 一个线表的样例，实现基础功能：拖拽、缩放、框选高亮（设置和添加）保存为图片。
 * DrawPieTest:一个环形选择界面的样例，实现基础排布与可选择性。
+
+* AuraUITest01:一个非阻塞运算的样例，四种方式实现：QCore、QTimer、QThread、QObject:toThread
