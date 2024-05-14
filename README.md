@@ -25,3 +25,5 @@
 * DrawPieTest:一个环形选择界面的样例，实现基础排布与可选择性。
 
 * AuraUITest01:一个非阻塞运算的样例，四种方式实现：QCore、QTimer、QThread、QObject:toThread
+
+* BlueprintsTest:一个蓝图系统的示例，实现基于QGraphics框架下模块化结构的流式执行蓝图。
