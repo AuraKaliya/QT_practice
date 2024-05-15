@@ -36,9 +36,18 @@ TestNode::TestNode(QObject *parent, QGraphicsItem *itemParent)
                     PortObjectItem::Bool
                     );
 
+    PortObjectItem* port5=new PortObjectItem(this);
+
+    port5 ->initPort("TestPort5",
+                    PortObjectItem::Input,
+                    PortObjectItem::Bool
+                    );
+
+
+
     addPort(port1);
     addPort(port2);
     addPort(port3);
     addPort(port4);
-
+    addPort(port5);
 }

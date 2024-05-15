@@ -24,9 +24,9 @@ void GridGraphicsView::setScaleRange(double minRange, double maxRange)
 void GridGraphicsView::mouseMoveEvent(QMouseEvent *e)
 {
 
-    m_currentPos=e->pos();
+//    m_currentPos=e->pos();
 
-    m_endPos=m_currentPos;
+//    m_endPos=m_currentPos;
 
     QGraphicsView::mouseMoveEvent(e);
 }
@@ -34,35 +34,35 @@ void GridGraphicsView::mouseMoveEvent(QMouseEvent *e)
 void GridGraphicsView::mousePressEvent(QMouseEvent *e)
 {
 
-    m_startPos=e->pos();
-    m_currentPos=m_startPos;
-    m_endPos=m_currentPos;
+//    m_startPos=e->pos();
+//    m_currentPos=m_startPos;
+//    m_endPos=m_currentPos;
 
-    // 为右键
-    if(e->buttons() ==Qt::RightButton)
-    {
+//    // 为右键
+//    if(e->buttons() ==Qt::RightButton)
+//    {
 
-    }
+//    }
 
-    // 为左键
-    if(e->buttons()==Qt::LeftButton)
-    {
+//    // 为左键
+//    if(e->buttons()==Qt::LeftButton)
+//    {
 
-    }
+//    }
     QGraphicsView::mousePressEvent(e);
 }
 
 void GridGraphicsView::mouseReleaseEvent(QMouseEvent *e)
 {
     QGraphicsView::mouseReleaseEvent(e);
-    m_currentPos=e->pos();
-    m_endPos=m_currentPos;
+//    m_currentPos=e->pos();
+//    m_endPos=m_currentPos;
 
-    // 为左键   释放
-    if (e->buttons() == Qt::LeftButton)
-    {
+//    // 为左键   释放
+//    if (e->buttons() == Qt::LeftButton)
+//    {
 
-    }
+//    }
 
 }
 
@@ -150,7 +150,7 @@ void GridGraphicsView::preInit()
 
     //缓冲背景
     setCacheMode(QGraphicsView::CacheBackground);
-    setViewportUpdateMode(QGraphicsView::BoundingRectViewportUpdate);
+    setViewportUpdateMode(QGraphicsView::FullViewportUpdate);
 
     //启用功能
     setDragMode(QGraphicsView::ScrollHandDrag);
@@ -159,15 +159,15 @@ void GridGraphicsView::preInit()
     setAcceptDrops(true);
     //=========================设置View的模式========================
 
-    //=========================初始化场景========================
-    if(! scene())
-    {
-        BlueprintsScene *s=new BlueprintsScene();
-        setScene(s);
-        int maxSize=1000;
-        setSceneRect(-maxSize,-maxSize,2*maxSize,2*maxSize);
-    }
-    //=========================初始化场景========================
+//    //=========================初始化场景========================
+//    if(! scene())
+//    {
+//        BlueprintsScene *s=new BlueprintsScene();
+//        setScene(s);
+//        int maxSize=1000;
+//        setSceneRect(-maxSize,-maxSize,2*maxSize,2*maxSize);
+//    }
+//    //=========================初始化场景========================
 
     //===============其他设置=============
     m_moveSceneFlag=false;

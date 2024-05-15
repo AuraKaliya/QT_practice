@@ -6,10 +6,12 @@ BlueprintsScene::BlueprintsScene(QObject *parent)
     preInit();
 }
 
-
+NodeManager *BlueprintsScene::getManager()
+{
+    return  m_nodeManager;
+}
 
 void BlueprintsScene::preInit()
 {
     m_nodeManager=new NodeManager(this);
-
 }

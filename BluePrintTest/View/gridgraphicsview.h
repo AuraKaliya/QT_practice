@@ -38,7 +38,7 @@ protected:
 private:
     void preInit();
     void updateScale();
-private:
+protected:
     QPoint m_currentPos;
 
     QPoint m_startPos;

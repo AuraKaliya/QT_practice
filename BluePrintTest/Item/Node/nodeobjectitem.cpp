@@ -217,6 +217,25 @@ unsigned int NodeObjectItem::getOutPortCount() const
     });
 }
 
+PortObjectItem *NodeObjectItem::getPortByPos(QPointF pos)
+{
+    QPoint realPos(pos.x()-x(),pos.y()-y());
+    //qDebug()<<"NodeObjectItem::getPortByPos |realPos:"<<realPos;
+//    for(auto it:m_portList)
+//    {
+//        //qDebug()<<"NodeObjectItem::getPortByPos | check: "<<it->portRect();
+//    }
+
+    auto it =std::find_if(m_portList.begin(),m_portList.end(),[realPos](PortObjectItem* port){
+        return port->portRect().contains(realPos);
+    });
+    if(it != m_portList.end())
+    {
+        return *it;
+    }
+    return nullptr;
+}
+
 void NodeObjectItem::updateNodeSize()
 {
     //更新节点的boundingRect的大小
@@ -232,6 +251,12 @@ void NodeObjectItem::updateNodeSize()
 
     //暂时固定一个节点左右两边各80
     m_nodeWidth=260;
+}
+
+void NodeObjectItem::mouseMoveEvent(QGraphicsSceneMouseEvent *e)
+{
+    QGraphicsItem::mouseMoveEvent(e);
+    emit  needUpdate(this);
 }
 
 NodeObjectItem::NodeType NodeObjectItem::nodeType() const

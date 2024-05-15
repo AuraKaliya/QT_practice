@@ -6,6 +6,7 @@
 
 #include "Item/Node/nodeobjectitem.h"
 #include "Item/Node/testnode.h"
+#include "Manager/nodemanager.h"
 #include <QKeyEvent>
 //=============test====================
 
@@ -38,10 +39,9 @@ void MainWindow::keyPressEvent(QKeyEvent *e)
 {
     if(e->key()==Qt::Key_P)
     {
-
         NodeObjectItem * item =new TestNode();
-        item->setNodeTitle("TestNode1");
-
+        item->setNodeTitle("TestNode"+QString::number(NodeManager::nodeId()));
+        NodeManager::registerNode(item);
 
         m_view->scene()->addItem(item);
 

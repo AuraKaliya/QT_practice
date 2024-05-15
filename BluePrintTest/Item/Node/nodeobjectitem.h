@@ -55,6 +55,7 @@ public:
     unsigned int getInPortCount()   const ;
     unsigned int getOutPortCount()  const ;
 
+    PortObjectItem* getPortByPos(QPointF pos);
 
     unsigned int nodeId() const;
     void setNodeId(unsigned int newId);
@@ -68,6 +69,7 @@ public:
     void setNodeType(NodeType newNodeType);
 protected:
     void updateNodeSize();
+    void  mouseMoveEvent(QGraphicsSceneMouseEvent *e)override;
 
 private:
     static QMap<NodeObjectItem::NodeType,QPair<QColor,QColor> > m_typeColorDictionary;
@@ -102,6 +104,7 @@ signals:
     void idChanged();
     void nodeTitleChanged();
     void nodeTypeChanged();
+    void needUpdate(NodeObjectItem*);
 };
 
 #endif // NODEOBJECTITEM_H

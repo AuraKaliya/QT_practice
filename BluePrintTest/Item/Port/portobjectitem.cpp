@@ -52,12 +52,12 @@ PortObjectItem::PortObjectItem(QObject *parent)
     : QObject{parent},m_assertDataTypeSet{},m_portId(0),
     m_portName(""),m_portValue(0),m_portTip(""),
     m_portType(NoneType),m_portDataType(NoneDataType),m_dataState(false),
-    m_linkPortState(false)
+    m_linkNode(static_cast<NodeObjectItem*>(parent)),m_linkPortState(false)
 {
 
 }
 
-void PortObjectItem::initPort(QString name, PortTye type, PortDataType dataType)
+void PortObjectItem::initPort(QString name, PortType type, PortDataType dataType)
 {
     setPortName(name);
     setPortType(type);
@@ -132,12 +132,12 @@ void PortObjectItem::setLinkNode(NodeObjectItem *newLinkNode)
     m_linkNode = newLinkNode;
 }
 
-PortObjectItem::PortTye PortObjectItem::portType() const
+PortObjectItem::PortType PortObjectItem::portType() const
 {
     return m_portType;
 }
 
-void PortObjectItem::setPortType(PortTye newPortType)
+void PortObjectItem::setPortType(PortType newPortType)
 {
     if (m_portType == newPortType)
         return;
@@ -163,6 +163,7 @@ QRect PortObjectItem::portRect() const
 void PortObjectItem::setPortRect(QRect newPortRect)
 {
     m_portRect = newPortRect;
+
 }
 
 PortObjectItem::PortDataType PortObjectItem::portDataType() const
@@ -176,6 +177,16 @@ void PortObjectItem::setPortDataType(PortDataType newPortDataType)
         return;
     m_portDataType = newPortDataType;
     emit portDataTypeChanged();
+}
+
+PortObjectItem *PortObjectItem::linkPort() const
+{
+    return m_linkPort;
+}
+
+void PortObjectItem::setLinkPort(PortObjectItem *newLinkPort)
+{
+    m_linkPort = newLinkPort;
 }
 
 

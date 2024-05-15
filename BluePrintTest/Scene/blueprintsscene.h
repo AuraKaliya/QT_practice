@@ -11,7 +11,7 @@ class BlueprintsScene : public QGraphicsScene
 public:
     explicit BlueprintsScene(QObject *parent = nullptr);
 
-
+    NodeManager* getManager();
 protected:
 
 
