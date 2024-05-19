@@ -22,5 +22,6 @@ private:
     Ui::MainWindow *ui;
 
     BlueprintsView * m_view =nullptr;
+    TestObject * m_obj=nullptr;
 };
 #endif // MAINWINDOW_H

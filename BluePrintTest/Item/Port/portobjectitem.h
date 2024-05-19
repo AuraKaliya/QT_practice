@@ -34,6 +34,11 @@ public:
         Double,
         Float,
     };
+
+    enum PortReadyStratagy{
+        Single,Multiple
+    };
+
 private:
     Q_OBJECT
 
@@ -85,6 +90,13 @@ public:
     PortObjectItem *linkPort() const;
     void setLinkPort(PortObjectItem *newLinkPort);
 
+    PortObjectItem::PortReadyStratagy solveStratagy() const;
+    void setSolveStratagy(PortReadyStratagy newSolveStratagy);
+
+    bool dataState() const;
+
+    void setDataState(bool newDataState);
+
 protected:
     QSet<PortDataType> m_assertDataTypeSet;
 
@@ -94,6 +106,8 @@ protected:
     QString m_portTip;
     PortType m_portType;
     PortDataType m_portDataType;
+
+    PortReadyStratagy m_solveStratagy;
 
 private:
     static QMap<PortObjectItem::PortDataType,QColor> m_typeColorDictionary;
@@ -112,6 +126,8 @@ private:
 
 
 
+    Q_PROPERTY(PortReadyStratagy solveStratagy READ solveStratagy WRITE setSolveStratagy NOTIFY solveStratagyChanged)
+
 signals:
 
     void portIdChanged();
@@ -120,6 +136,8 @@ signals:
     void portTipChanged();
     void portTypeChanged();
     void portDataTypeChanged();
+    void solveStratagyChanged();
+    void dataStateChanged();
 };
 
 #endif // PORTOBJECTITEM_H

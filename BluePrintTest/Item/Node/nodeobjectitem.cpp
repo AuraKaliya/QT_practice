@@ -17,6 +17,11 @@ NodeObjectItem::NodeObjectItem(QObject *parent, QGraphicsItem *itemParent)
     ,m_fixPortHeight(50)
     ,m_nodeWidth(260)
     ,m_nodeHeight(90)
+    ,m_solveFlag(false)
+    ,m_readyFlag(false)
+    ,m_nextNodeList{}
+
+
 {
     setFlags(ItemIsMovable | ItemClipsToShape | ItemIsSelectable);
     setNodeType(NoType);
@@ -154,6 +159,32 @@ void NodeObjectItem::paint(QPainter *painter, const QStyleOptionGraphicsItem *op
 
 }
 
+void NodeObjectItem::nodeRun()
+{
+    //qDebug()<<"Node Run :"<<m_nodeTitle;
+    //固定预处理
+    //   进入到run阶段 代表所有输入端口准备就绪 此节点准备就绪
+    //solute（）
+    solute();
+    //后续处理
+    //qDebug()<<"Node Soluted : outPort"<<m_outPortList.size();
+
+    //处理完成 需要先将输出端口连接的端口的状态设置为就绪状态
+    for(auto it:m_outPortList)
+    {
+        //qDebug()<<"Node Soluted : outPort link"<<it->portId()<<" - "<<it->linkPort()->portId();
+        PortObjectItem* port =it->linkPort();
+        port->setPortValue(it->portValue());
+        port->setDataState(true);
+    }
+
+    //   然后根据输入端口的策略进行状态重置
+    resetInPortReadyState();
+
+    setSolveFlag(true);
+    setReadyFlag(false);
+}
+
 void NodeObjectItem::solute()
 {
     //处理   获取输入端口的数据 --- 逻辑处理  --- 设置输出端口数据
@@ -166,7 +197,7 @@ QVariant NodeObjectItem::getValue()
 
 void NodeObjectItem::addPort(PortObjectItem *port)
 {
-    m_portList.push_back(port);
+    m_portList.append(port);
 
     QRect portRect;
 
@@ -194,13 +225,49 @@ void NodeObjectItem::addPort(PortObjectItem *port)
         portRect=QRect(m_nodeWidth-leftSpace-a,m_fixTitleHeight+(m_fixPortHeight-a)/2,a,a);
         m_outLinkPort=port;
     }
-
+    port->setLinkNode(this);
     port->setPortRect(portRect);
 
-
+    connect(port,&PortObjectItem::dataStateChanged,this,[this,port](){
+        if(port->dataState())
+        m_waitDataPortSet.remove(port);
+    });
 
 
     updateNodeSize();
+}
+
+void NodeObjectItem::initSolveInformation()
+{
+    setSolveFlag(false);
+    setReadyFlag(false);
+    m_startNodeList.clear();
+
+    for(auto it:m_inPortList)
+    {
+        m_waitDataPortSet.insert(it);
+    }
+}
+
+bool NodeObjectItem::checkReadyPort()
+{
+    if(m_waitDataPortSet.size()<1)
+    {
+        setReadyFlag(true);
+    }
+
+    return m_readyFlag;
+}
+
+void NodeObjectItem::resetInPortReadyState()
+{
+    for(auto it: m_inPortList)
+    {
+        if(it->solveStratagy() == PortObjectItem::Single)
+        {
+            m_waitDataPortSet.insert(it);
+        }
+    }
 }
 
 unsigned int NodeObjectItem::getInPortCount() const
@@ -257,6 +324,51 @@ void NodeObjectItem::mouseMoveEvent(QGraphicsSceneMouseEvent *e)
 {
     QGraphicsItem::mouseMoveEvent(e);
     emit  needUpdate(this);
+}
+
+QSet<NodeObjectItem *> NodeObjectItem::startNodeList() const
+{
+    return m_startNodeList;
+}
+
+void NodeObjectItem::addStartNode(NodeObjectItem *node)
+{
+    m_startNodeList.insert(node);
+}
+
+QVector<NodeObjectItem *> NodeObjectItem::nextNodeList() const
+{
+    return m_nextNodeList;
+}
+
+void NodeObjectItem::setNextNodeList(const QVector<NodeObjectItem *> &newNextNodeList)
+{
+    m_nextNodeList = newNextNodeList;
+}
+
+void NodeObjectItem::addNextNode(NodeObjectItem *node)
+{
+    m_nextNodeList.append(node);
+}
+
+bool NodeObjectItem::readyFlag() const
+{
+    return m_readyFlag;
+}
+
+void NodeObjectItem::setReadyFlag(bool newReadyFlag)
+{
+    m_readyFlag = newReadyFlag;
+}
+
+bool NodeObjectItem::solveFlag() const
+{
+    return m_solveFlag;
+}
+
+void NodeObjectItem::setSolveFlag(bool newSolveFlag)
+{
+    m_solveFlag = newSolveFlag;
 }
 
 NodeObjectItem::NodeType NodeObjectItem::nodeType() const

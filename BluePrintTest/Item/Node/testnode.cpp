@@ -7,12 +7,7 @@ TestNode::TestNode(QObject *parent, QGraphicsItem *itemParent)
 {
     setNodeType(SolveNode);
 
-    PortObjectItem* port1=new PortObjectItem(this);
 
-    port1 ->initPort("TestPort1",
-                    PortObjectItem::Input,
-                    PortObjectItem::Int
-                    );
 
     PortObjectItem* port2=new PortObjectItem(this);
 
@@ -29,25 +24,47 @@ TestNode::TestNode(QObject *parent, QGraphicsItem *itemParent)
                     PortObjectItem::NoneDataType
                     );
 
-    PortObjectItem* port4=new PortObjectItem(this);
-
-    port4 ->initPort("TestPort4",
-                    PortObjectItem::Output,
-                    PortObjectItem::Bool
-                    );
-
-    PortObjectItem* port5=new PortObjectItem(this);
-
-    port5 ->initPort("TestPort5",
-                    PortObjectItem::Input,
-                    PortObjectItem::Bool
-                    );
 
 
+    m_inPort1=new PortObjectItem(this);
 
-    addPort(port1);
+    m_inPort1->initPort("AddPort1",
+                        PortObjectItem::Input,
+                        PortObjectItem::Int
+                        );
+
+    m_inPort2=new PortObjectItem(this);
+
+    m_inPort2->initPort("AddPort2",
+                        PortObjectItem::Input,
+                        PortObjectItem::Int
+                        );
+
+
+
+    m_outPort=new PortObjectItem(this);
+
+    m_outPort->initPort("AddPort2",
+                        PortObjectItem::Output,
+                        PortObjectItem::Int
+                        );
+
     addPort(port2);
     addPort(port3);
-    addPort(port4);
-    addPort(port5);
+    addPort(m_inPort1);
+    addPort(m_inPort2);
+    addPort(m_outPort);
+    qDebug()<<"testNode : portList"<<portList().size();
+}
+
+void TestNode::solute()
+{
+    qDebug()<<"TestNode::solute  | start.";
+    int a=m_inPort1->portValue().toInt();
+    int b=m_inPort2->portValue().toInt();
+
+    int res=a+b;
+    m_outPort->setPortValue(res);
+
+    qDebug()<<"TestNode::solute  | end."  <<" outPort:"<<m_outPort->portValue();
 }

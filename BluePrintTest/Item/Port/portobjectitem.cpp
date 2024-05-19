@@ -52,7 +52,8 @@ PortObjectItem::PortObjectItem(QObject *parent)
     : QObject{parent},m_assertDataTypeSet{},m_portId(0),
     m_portName(""),m_portValue(0),m_portTip(""),
     m_portType(NoneType),m_portDataType(NoneDataType),m_dataState(false),
-    m_linkNode(static_cast<NodeObjectItem*>(parent)),m_linkPortState(false)
+    m_linkNode(static_cast<NodeObjectItem*>(parent)),m_linkPortState(false),
+    m_solveStratagy(Single)
 {
 
 }
@@ -106,7 +107,7 @@ QVariant PortObjectItem::portValue() const
 void PortObjectItem::setPortValue(const QVariant &newPortValue)
 {
     m_portValue = newPortValue;
-    m_dataState=true;
+    setDataState(true);
 }
 
 QString PortObjectItem::portTip() const
@@ -187,6 +188,30 @@ PortObjectItem *PortObjectItem::linkPort() const
 void PortObjectItem::setLinkPort(PortObjectItem *newLinkPort)
 {
     m_linkPort = newLinkPort;
+}
+
+PortObjectItem::PortReadyStratagy PortObjectItem::solveStratagy() const
+{
+    return m_solveStratagy;
+}
+
+void PortObjectItem::setSolveStratagy(PortReadyStratagy newSolveStratagy)
+{
+    if (m_solveStratagy == newSolveStratagy)
+        return;
+    m_solveStratagy = newSolveStratagy;
+    emit solveStratagyChanged();
+}
+
+bool PortObjectItem::dataState() const
+{
+    return m_dataState;
+}
+
+void PortObjectItem::setDataState(bool newDataState)
+{
+    m_dataState = newDataState;
+    emit dataStateChanged();
 }
 
 
