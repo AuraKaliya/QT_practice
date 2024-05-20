@@ -25,8 +25,19 @@ public:
 
     Entity& entity();
 
+    void setDrawFunction(const std::function<void (QPainter *, ClickLabel *)> & newDrawFunction);
+    bool isDrawFunctionEmpty();
+protected:
+    void paintEvent(QPaintEvent*e)override;
+private:
+    void preInit();
 protected:
     Entity m_entity;
+
+private:
+    std::function<void(QPainter*,ClickLabel*)> m_drawFunction;
+    bool drawFunctionFlag;
+
 signals:
     void clickedMe(ClickLabel*);
     void clicked();

@@ -1,12 +1,11 @@
 #include "auraclassifydisplaywidget01.h"
 
 
-AuraClassifyDisplayWidget01::AuraClassifyDisplayWidget01(AuraSwitchWidget01 *switchWidget, QStackedWidget* stackedWidget,QWidget *parent)
-    : QWidget{parent}
+AuraClassifyDisplayWidget01::AuraClassifyDisplayWidget01(AuraAbstractSwitchWidget *switchWidget, QStackedWidget* stackedWidget,QWidget *parent)
+    : UIWidget{parent}
     ,m_switchWidget(switchWidget)
     ,m_stackedWidget(stackedWidget)
 {
-    m_mainLayout=new QVBoxLayout(this);
     preInit();
 }
 
@@ -19,9 +18,11 @@ void AuraClassifyDisplayWidget01::addWidget(ClickLabel *lb, QWidget *w)
 
 }
 
-void AuraClassifyDisplayWidget01::preInit()
+void AuraClassifyDisplayWidget01::initWidget()
 {
-    if(!m_switchWidget) m_switchWidget=new AuraSwitchWidget01();
+    //======================设置======================
+
+    if(!m_switchWidget) m_switchWidget=new AuraAbstractSwitchWidget();
     if(!m_stackedWidget) m_stackedWidget=new QStackedWidget();
 
     m_switchWidget->setParent(this);
@@ -35,8 +36,17 @@ void AuraClassifyDisplayWidget01::preInit()
 
     setLayout(m_mainLayout);
 
-    connect(m_switchWidget,&AuraSwitchWidget01::nowIndexChanged,m_stackedWidget,&QStackedWidget::setCurrentIndex);
+    connect(m_switchWidget,&AuraAbstractSwitchWidget::nowIndexChanged,m_stackedWidget,&QStackedWidget::setCurrentIndex);
     connect(m_stackedWidget,&QStackedWidget::currentChanged,this,[](int i){
         qDebug()<<"QStackedWidget::currentChanged | now Idx:"<<i;
     });
+
+    //======================设置======================
+}
+
+void AuraClassifyDisplayWidget01::preInit()
+{
+    //======================构建======================
+    m_mainLayout=new QVBoxLayout(this);
+    //======================构建======================
 }

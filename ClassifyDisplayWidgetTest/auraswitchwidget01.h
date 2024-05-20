@@ -2,35 +2,23 @@
 #define AURASWITCHWIDGET01_H
 
 #include <QWidget>
-
-
 #include "clicklabel.h"
+#include "auraabstractswitchwidget.h"
+#include "UIStyle.hpp"
 
-
-class AuraSwitchWidget01 : public QWidget
+class AuraSwitchWidget01 : public AuraAbstractSwitchWidget
 {
     Q_OBJECT
 public:
     explicit AuraSwitchWidget01(QWidget *parent = nullptr);
-    void initWidget();
-
-
-    void addLabel(ClickLabel* label);
-    ClickLabel* getLabel(int index);
-    int nowIndex() const;
-    void setNowIndex(int newNowIndex);
-    void updateLabelState();
-    void updateLayout();
+    void addLabel(ClickLabel* label)override;
+    void updateLabelState()override;
 
 protected:
-    void resizeEvent(QResizeEvent* e)override;
+   static void labelPaint(QPainter* p,ClickLabel* w);
 private:
-    QVector<ClickLabel*> m_labelList;
-    int m_nowIndex;
-    int m_preIndex;
-
 signals:
-    void nowIndexChanged(int);
+
 };
 
 #endif // AURASWITCHWIDGET01_H

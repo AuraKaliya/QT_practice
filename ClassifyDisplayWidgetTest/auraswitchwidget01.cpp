@@ -2,13 +2,7 @@
 #include "clicklabel.h"
 
 AuraSwitchWidget01::AuraSwitchWidget01(QWidget *parent)
-    : QWidget{parent}
-{
-    m_nowIndex=-1;
-    m_preIndex=-1;
-}
-
-void AuraSwitchWidget01::initWidget()
+    : AuraAbstractSwitchWidget{parent}
 {
 
 }
@@ -17,15 +11,17 @@ void AuraSwitchWidget01::addLabel(ClickLabel *label)
 {
     if(!label) return;
 
-    auto entity= label->entity();
+    auto & entity= label->entity();
 
     if(!entity.hasComponent("Id"))
     {
+        qDebug()<<"AuraSwitchWidget01::addLabel : no have Id. add it.";
         entity.addComponent("Id",new Component<Entity>(entity));
     }
 
     if(!entity.hasComponent("State"))
     {
+        qDebug()<<"AuraSwitchWidget01::addLabel : no have State. add it.";
         entity.addComponent("State",new Component<Entity>(entity));
     }
 
@@ -35,64 +31,33 @@ void AuraSwitchWidget01::addLabel(ClickLabel *label)
     auto stateComponent =entity.getComponent("State");
     stateComponent->setValue("Normal");
 
-    label->setParent(this);
-
     connect(label,&ClickLabel :: clickedMe,this,[this](ClickLabel *label){
         setNowIndex(label->entity().getComponent("Id")->getValue<unsigned int>());
     });
 
-    label->setVisible(true);
-    m_labelList.append(label);
-    update();
-}
+    label->setDrawFunction(std::bind(&AuraSwitchWidget01::labelPaint,
+                                     std::placeholders::_1,
+                                     std::placeholders::_2 ));
 
-ClickLabel *AuraSwitchWidget01::getLabel(int index)
-{
-    if(index<0 || index>=m_labelList.size())
-        return nullptr;
-    return m_labelList[index];
-}
-
-void AuraSwitchWidget01::resizeEvent(QResizeEvent *e)
-{
-    QWidget::resizeEvent(e);
-
-    int count=m_labelList.size();
-    if(count<1) return;
-    int w=width()/count;
-    int h=height();
-    for(int i=0;i<m_labelList.count();++i)
-    {
-        m_labelList[i]->setGeometry(i*w,0,w,h);
-    }
-}
-
-int AuraSwitchWidget01::nowIndex() const
-{
-    return m_nowIndex;
-}
-
-void AuraSwitchWidget01::setNowIndex(int newNowIndex)
-{
-    if(newNowIndex<0 || newNowIndex>=m_labelList.size()) return;
-    m_preIndex = m_nowIndex;
-    m_nowIndex = newNowIndex;
-
-    updateLabelState();
+    AuraAbstractSwitchWidget::addLabel(label);
 }
 
 void AuraSwitchWidget01::updateLabelState()
 {
-    if(m_nowIndex<0 || m_nowIndex>=m_labelList.size()) return;
-    if(m_preIndex==m_nowIndex) return;
-    m_labelList[m_nowIndex]->entity().getComponent("State")->setValue(QVariant("Current"));
+    m_labelList[m_nowIndex]->entity().getComponent("State")->setValue("Current");
     if(m_preIndex<0 || m_preIndex>=m_labelList.size()) return;
-    m_labelList[m_preIndex]->entity().getComponent("State")->setValue(QVariant("Normal"));
-    emit nowIndexChanged(m_nowIndex);
-    update();
+    m_labelList[m_preIndex]->entity().getComponent("State")->setValue("Normal");
+
+    AuraAbstractSwitchWidget::updateLabelState();
 }
 
-void AuraSwitchWidget01::updateLayout()
+void AuraSwitchWidget01::labelPaint(QPainter *p, ClickLabel *w)
 {
-    resizeEvent(nullptr);
+    auto stateComponent= w->entity().getComponent("State");
+
+    QColor color =UIStyle::getStateColor(stateComponent->getValue<QString>());
+    p->setBrush(QBrush(color));
+    p->setPen(QPen(color));
+    p->drawRect(-1,-1,w->width()+2,w->height()+2);
+    qDebug()<<"AuraSwitchWidget01::labelPaint | in label:"<<w;
 }

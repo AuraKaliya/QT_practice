@@ -5,22 +5,25 @@
 #include <QStackedWidget>
 #include <QVBoxLayout>
 
+
 //============需要替换成接口文件===============
-#include "auraswitchwidget01.h"
+#include "uiwidget.h"
+#include "auraabstractswitchwidget.h"
 //============需要替换成接口文件===============
 
 
-class AuraClassifyDisplayWidget01 : public QWidget
+class AuraClassifyDisplayWidget01 : public UIWidget
 {
     Q_OBJECT
 public:
-    explicit AuraClassifyDisplayWidget01(AuraSwitchWidget01* switchWidget,QStackedWidget* stackedWidget,QWidget *parent = nullptr);
+    explicit AuraClassifyDisplayWidget01(AuraAbstractSwitchWidget* switchWidget,QStackedWidget* stackedWidget,QWidget *parent = nullptr);
     void addWidget(ClickLabel* lb,QWidget* w);
-private:
-    void preInit();
+    void initWidget()override;
+protected:
+    void preInit() ;
 private:
     QVBoxLayout* m_mainLayout=nullptr;
-    AuraSwitchWidget01* m_switchWidget=nullptr;
+    AuraAbstractSwitchWidget* m_switchWidget=nullptr;
     QStackedWidget* m_stackedWidget=nullptr;
 
 signals:
