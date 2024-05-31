@@ -50,4 +50,5 @@
 
 * ClassifyDisplayWidgetTest: 一个多Title切换Widget的示例，使用QSkackedWidget作为主要显示窗体部分。采用组件组合的模式实现。附带Component的模板。
 
-    
+
+* LicenseTest: 一个基于OpenSSL验证证书 和 RSA加解密的示例。
