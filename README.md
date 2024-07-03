@@ -52,3 +52,4 @@
 
 
 * LicenseTest: 一个基于OpenSSL验证证书 和 RSA加解密的示例。
+* SignalMapperTest:一个对类的信号携带的信息进行功能上拓展的示例，使用了三种方式：继承式、组件式、映射器式。
